@@ -1,0 +1,92 @@
+#container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    background: #FCFCFC;
+}
+
+/*OUTPUT STYLES*/
+
+/*the tables*/
+#output-grocery-list, #output-grocery-cost  {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em 5%; 
+    background: #F5F5F5;
+    font: normal 1em/2.4em Arial, Helvetica, sans-serif;
+    color: #555;
+}
+
+#output-grocery-list td, #output-grocery-cost td {
+      border-bottom: 1px solid #C9C9C9;
+}
+  
+/*classes for cells (td) within tables*/
+.grocery-name, #output-total-name {
+    width: 40%;
+    margin: 0;
+    padding: 0 5%;
+}
+
+.grocery-cost, #output-total {
+    width: 20%;
+    margin: 0;
+    padding: 0 5%;  
+}
+
+.grocery-remove, #output-total-blank {
+    width: 10%;
+    margin: 0;
+    padding: 0 5%;   
+}
+
+.grocery-remove {
+    background: #FFE303;
+    text-align: center;
+}
+
+/*INPUT STYLES*/
+
+dialogue {
+    width: 90%;
+    margin: 1em 5%;
+    padding: 0; 
+    float: left;
+    background: #F5F5F5;
+    font: normal 1em/2.4em Arial, Helvetica, sans-serif;
+    color: #555;
+}
+
+#input-grocery-name, #input-grocery-cost  {
+    width: 30%;
+    margin: 1em 5%;
+    padding: 0.4em 5%;
+    outline: none;
+    border-bottom: 1px solid #C9C9C9;
+    float: left;
+    background: #FCFCFC;
+}
+
+#input-submit-text {
+    width: 90%;
+    margin: 1em 5%;
+    padding: 0.4em 0;
+    float: left; 
+    text-align: right;
+}
+
+/*SIMPLE CLEARFIX*/
+
+.clear {
+    clear: both;
+}
+
+/*FONTS*/
+
+h2 {
+    font: normal 1.6em/1.5em Arial, Helvetica, sans-serif;
+    color: #555;
+    padding-top: .4em;
+    text-align: center;
+}
