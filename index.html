@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <meta name="description" content="grocery list">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Sean Kelliher - Grocery List</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <h2>Grocery List</h2>
+
+            <table id="output-grocery-list">
+
+            </table>
+
+            <table id="output-grocery-cost">
+
+                <tr>
+                    <td id="output-total-name">Total</td>
+                    <td id="output-total"></td>
+                    <td id="output-total-blank"></td>
+                </tr>
+
+            </table>
+
+            <dialogue open id="input-grocery">
+
+                <div id="input-grocery-name" contenteditable="true">
+                    <em>Add Grocery Name</em>
+                </div>
+
+                <div id="input-grocery-cost" contenteditable="true">
+                    <em>Add Grocery Price</em>
+                </div>
+
+                <div id="input-submit-text">
+                    <em>Press Return to Submit</em>
+                </div>
+
+            </dialogue>
+
+            <div class="clear"><br /></div>
+
+        </div> <!--close container-->
+
+        <script type="text/javascript" src="site-reduce.js"></script>
+        <!--<script type="text/javascript" src="site-loop.js"></script>-->
+
+    </body>
+    
+</html>
