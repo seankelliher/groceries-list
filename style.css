@@ -12,7 +12,7 @@
 #output-grocery-list, #output-grocery-cost  {
     width: 90%;
     margin: 0 auto;
-    padding: 1em 5%; 
+    padding: 1em 5%;
     background: #F5F5F5;
     font: normal 1em/2.4em Arial, Helvetica, sans-serif;
     color: #555;
@@ -21,7 +21,7 @@
 #output-grocery-list td, #output-grocery-cost td {
       border-bottom: 1px solid #C9C9C9;
 }
-  
+
 /*classes for cells (td) within tables*/
 .grocery-name, #output-total-name {
     width: 40%;
@@ -32,13 +32,13 @@
 .grocery-cost, #output-total {
     width: 20%;
     margin: 0;
-    padding: 0 5%;  
+    padding: 0 5%;
 }
 
 .grocery-remove, #output-total-blank {
     width: 10%;
     margin: 0;
-    padding: 0 5%;   
+    padding: 0 5%;
 }
 
 .grocery-remove {
@@ -51,7 +51,7 @@
 dialogue {
     width: 90%;
     margin: 1em 5%;
-    padding: 0; 
+    padding: 0;
     float: left;
     background: #F5F5F5;
     font: normal 1em/2.4em Arial, Helvetica, sans-serif;
@@ -72,7 +72,7 @@ dialogue {
     width: 90%;
     margin: 1em 5%;
     padding: 0.4em 0;
-    float: left; 
+    float: left;
     text-align: right;
 }
 
