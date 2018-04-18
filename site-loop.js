@@ -1,10 +1,10 @@
 //ensure DOM is loaded
 document.addEventListener("DOMContentLoaded", function() {
   "use strict";
-       
+
     //clear text from input boxes when selected
     document.getElementById("input-grocery").addEventListener("focusin", function(element) {
-        element.target.textContent = ""; 
+        element.target.textContent = "";
     });
 
     //trigger function when return/enter key is pressed
@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    
+
     //check if grocery has name and price
     function checkTheNumbers() {
-        
+
         //retrieve entry for name and cost
         var name = document.getElementById("input-grocery-name").textContent;
         var cost = document.getElementById("input-grocery-cost").textContent;
-        
+
         //run the regex text() function on cost
         var costReCheck = /^\d*\.?\d{1,2}$/.test(cost);
 
@@ -34,39 +34,39 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Hey, you need a name for that grocery!");
         } else {
             retrieveTheNumbers(name, cost); //pass name and cost to next function
-        } 
+        }
     } //close checkTheNumbers function
-      
-    
+
+
     //create row and cells, insert grocery name and price
     function retrieveTheNumbers(n, c) {
-        
+
         //receive name and cost from previous function
         var name2 = (n);
         var cost2 = (c);
-         
+
         //retrieve the table, insert a row and three cells into it
         var groceryTable = document.getElementById("output-grocery-list");
         var groceryRow = groceryTable.insertRow(-1); //-1 inserts row at end of table
         var groceryCellName = groceryRow.insertCell(0);
         var groceryCellCost = groceryRow.insertCell(1);
         var groceryCellRemove = groceryRow.insertCell(2);
-        
+
         //retrive the text for name and cost, insert into their cells
         groceryCellName.textContent = name2;
         groceryCellCost.textContent = cost2;
         groceryCellRemove.textContent = "x";
-        
+
         //add a class name to the grocery name, cost, and remove cells
         groceryCellName.className = "grocery-name";
         groceryCellCost.className = "grocery-cost";
         groceryCellRemove.className = "grocery-remove";
-     
+
         runTheNumbers();
 
-    } //close retrieveTheNumbers function 
+    } //close retrieveTheNumbers function
 
-    
+
     //add the numbers, retrieve, and insert total cost
     function runTheNumbers() {
         //Gather all the elements containing the grocery-cost class
@@ -82,18 +82,18 @@ document.addEventListener("DOMContentLoaded", function() {
         var sumTotalFixed;
 
         for(index; index < text.length; index+=1){
-            sumTotal = sum += parseFloat(text[index]); 
+            sumTotal = sum += parseFloat(text[index]);
             sumTotalFixed = sumTotal.toFixed(2);
         }
-        
+
         //retrieve and insert the total
         document.getElementById("output-total").textContent = sumTotalFixed;
-        
-        clearTheBoxes();
-        
-    } //close runTheNumbers function 
 
-    
+        clearTheBoxes();
+
+    } //close runTheNumbers function
+
+
     //gather and clear text from input fields
     function clearTheBoxes() {
         var index = 0;
@@ -102,13 +102,13 @@ document.addEventListener("DOMContentLoaded", function() {
         for (index; index < clear.length; index++) {
             clear[index].textContent = "";
         }
-        
+
         //return cursor to the grocery name field
         document.getElementById("input-grocery-name").focus();
-        
+
     } //close clearTheBoxes function
  
-    
+
     //remove the row, if desired
     var list = document.getElementById("output-grocery-list");
 
@@ -116,11 +116,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         var listRow = element.target.parentNode.rowIndex;
         var listCell = element.target.cellIndex;
-        
+
         //only remove the row if target is cell 2 (remember, the first cell is 0)
         if (listCell === 2) {
             list.deleteRow(listRow);
-            
+
             runTheNumbers();
         }
     });
