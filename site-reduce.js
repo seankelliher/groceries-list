@@ -1,14 +1,14 @@
 //ensure DOM is loaded
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
     //clear text from input boxes when selected
-    document.getElementById("input-grocery").addEventListener("focusin", function(element) {
+    document.getElementById("input-grocery").addEventListener("focusin", function (element) {
         element.target.textContent = "";
     });
 
     //trigger function when return/enter key is pressed
-    document.getElementById("input-grocery").addEventListener("keydown", function(event) {
+    document.getElementById("input-grocery").addEventListener("keydown", function (event) {
 
         if (event.keyCode === 13) {
             event.preventDefault();
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     //check if grocery has name and price
-    function checkTheNumbers() {
+    function checkTheNumbers () {
 
         //retrieve entry for name and cost
         var name = document.getElementById("input-grocery-name").textContent;
@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         //run if statement
         if (costReCheck === false) {
-            alert("Hey, that's not a price!");
+            window.alert("Hey, that's not a price!");
         } else if (name === "") {
-            alert("Hey, you need a name for that grocery!");
+            window.alert("Hey, you need a name for that grocery!");
         } else {
             retrieveTheNumbers(name, cost); //pass name and cost to next function
         }
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     //create row and cells, insert grocery name and price
-    function retrieveTheNumbers(n, c) {
+    function retrieveTheNumbers (n, c) {
 
         //receive name and cost from previous function
         var name2 = (n);
@@ -64,11 +64,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         runTheNumbers();
 
-    } //close retrieveTheNumbers function 
+    } //close retrieveTheNumbers function
 
 
     //add the numbers, retrieve, and insert total cost
-    function runTheNumbers() {
+    function runTheNumbers () {
         //Gather all the elements containing the grocery-cost class
         var groceryCost = document.getElementsByClassName("grocery-cost");
 
@@ -83,11 +83,11 @@ document.addEventListener("DOMContentLoaded", function() {
             var numbers = text.map(Number);
 
             //add the numbers with "reduce"
-            function consolidate(total, currentValue) {
+            function consolidate (total, currentValue) {
                 return total + currentValue;
             }
 
-            function addTheNumbers() {
+            function addTheNumbers () {
                 var sumTotal = numbers.reduce(consolidate);
                 var sumTotalFixed = sumTotal.toFixed(2);
                 document.getElementById("output-total").textContent = sumTotalFixed;
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     //gather and clear text from input fields
-    function clearTheBoxes() {
+    function clearTheBoxes () {
         var index = 0;
         var clear = document.querySelectorAll("#input-grocery-name, #input-grocery-cost");
 
@@ -114,12 +114,12 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("input-grocery-name").focus();
 
     } //close clearTheBoxes function
- 
+
 
     //remove the row, if desired
     var list = document.getElementById("output-grocery-list");
 
-    list.addEventListener("click", function(element) {
+    list.addEventListener("click", function (element) {
 
         var listRow = element.target.parentNode.rowIndex;
         var listCell = element.target.cellIndex;
