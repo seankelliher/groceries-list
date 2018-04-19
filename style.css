@@ -44,6 +44,7 @@
 .grocery-remove {
     background: #FFE303;
     text-align: center;
+    cursor: pointer;
 }
 
 /*INPUT STYLES*/
