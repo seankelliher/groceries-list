@@ -120,12 +120,13 @@ market = {
         "use strict";
 
         //Gather and then clear text from input fields
-        let index;
         const clear = document.querySelectorAll("#input-grocery-name, #input-grocery-cost");
+        const clearArray = Array.from(clear);
 
-        for (index = 0; index < clear.length; index += 1) {
-            clear[index].textContent = "";
-        }
+        //For Each loop
+        clearArray.forEach(function (clr) {
+            clr.textContent = "";
+        });
 
         //Return cursor to the "grocery name" field
         document.getElementById("input-grocery-name").focus();
