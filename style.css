@@ -6,6 +6,13 @@
     background: #FCFCFC;
 }
 
+/*Clearfix for #container (accomplished with pseudo-element technique)*/
+#container::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 /*OUTPUT STYLES*/
 
 /*the tables*/
@@ -75,12 +82,6 @@ dialogue {
     padding: 0.4em 0;
     float: left;
     text-align: right;
-}
-
-/*SIMPLE CLEARFIX*/
-
-.clear {
-    clear: both;
 }
 
 /*FONTS*/
