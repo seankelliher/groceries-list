@@ -29,7 +29,9 @@ header {
     margin: 0 auto;
     padding: 1em 5%;
     background: #fafafa;
-    font: normal 1em/2.4 Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2.4;
 }
 
 #output-grocery-list td, #output-grocery-cost td {
@@ -69,7 +71,9 @@ dialogue {
     padding: 0;
     float: left;
     background: #fafafa;
-    font: normal 1em/2.4 Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2.4;
 }
 
 #input-grocery-name, #input-grocery-cost  {
@@ -82,10 +86,10 @@ dialogue {
     background: #fff;
 }
 
-#input-submit-text {
-    width: 90%;
-    margin: 1em 5%;
-    padding: 0.4em 0;
+footer {
+    width: 80%;
+    margin: 1em 10%;
+    padding: 0;
     float: left;
     text-align: right;
 }
@@ -93,7 +97,15 @@ dialogue {
 /*FONTS*/
 
 h1 {
-    font: normal 1.6em/1.5 Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    line-height: 1.5;
     text-align: center;
     color: #fff;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2.4;
 }
