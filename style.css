@@ -22,7 +22,6 @@
     padding: 1em 5%;
     background: #F5F5F5;
     font: normal 1em/2.4 Arial, Helvetica, sans-serif;
-    color: #555;
 }
 
 #output-grocery-list td, #output-grocery-cost td {
@@ -63,7 +62,6 @@ dialogue {
     float: left;
     background: #F5F5F5;
     font: normal 1em/2.4 Arial, Helvetica, sans-serif;
-    color: #555;
 }
 
 #input-grocery-name, #input-grocery-cost  {
@@ -88,7 +86,6 @@ dialogue {
 
 h2 {
     font: normal 1.6em/1.5 Arial, Helvetica, sans-serif;
-    color: #555;
     padding-top: .4em;
     text-align: center;
 }
