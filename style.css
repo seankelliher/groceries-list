@@ -3,7 +3,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 0;
-    background: #FCFCFC;
+    background: #00bcd4;
 }
 
 /*Clearfix for #container (accomplished with pseudo-element technique)*/
@@ -20,12 +20,12 @@
     width: 90%;
     margin: 0 auto;
     padding: 1em 5%;
-    background: #F5F5F5;
+    background: #00bcd4;
     font: normal 1em/2.4 Arial, Helvetica, sans-serif;
 }
 
 #output-grocery-list td, #output-grocery-cost td {
-      border-bottom: 1px solid #C9C9C9;
+      border-bottom: 1px solid #fafafa;
 }
 
 /*classes for cells (td) within tables*/
@@ -48,7 +48,7 @@
 }
 
 .grocery-remove {
-    background: #FFE303;
+    background: #ffeb3b;
     text-align: center;
     cursor: pointer;
 }
@@ -60,7 +60,7 @@ dialogue {
     margin: 1em 5%;
     padding: 0;
     float: left;
-    background: #F5F5F5;
+    background: #00bcd4;
     font: normal 1em/2.4 Arial, Helvetica, sans-serif;
 }
 
@@ -69,7 +69,7 @@ dialogue {
     margin: 1em 5%;
     padding: 0.4em 5%;
     outline: none;
-    border-bottom: 1px solid #C9C9C9;
+    border-bottom: 1px solid #fafafa;
     float: left;
     background: #FCFCFC;
 }
