@@ -63,7 +63,7 @@ market = {
             const costNumFixString = costNumFix.toString();
 
             //Retrieve the table, insert a row and three cells into it
-            const groceryTable = document.getElementById("output-grocery-list");
+            const groceryTable = document.getElementById("grocery-list");
             const groceryRow = groceryTable.insertRow(-1); //-1 inserts row at end of table
             const groceryCellName = groceryRow.insertCell(0);
             const groceryCellCost = groceryRow.insertCell(1);
@@ -109,7 +109,7 @@ market = {
             const sumTotalFixed = sumTotal.toFixed(2);
 
             //Insert the total in the cell
-            document.getElementById("output-total").textContent = sumTotalFixed;
+            document.getElementById("total-amount").textContent = sumTotalFixed;
         }
 
         //Invoke the clearTheBoxes function
@@ -136,7 +136,7 @@ market = {
         "use strict";
 
         //Get the table
-        const list = document.getElementById("output-grocery-list");
+        const list = document.getElementById("grocery-list");
 
         //Monitor the table for a "click" event
         list.addEventListener("click", function (element) {
