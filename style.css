@@ -24,7 +24,7 @@ header {
 /*OUTPUT STYLES*/
 
 /*the tables*/
-#output-grocery-list, #output-grocery-cost  {
+#grocery-list, #grocery-total  {
     width: 90%;
     margin: 0 auto;
     padding: 1em 5%;
@@ -34,24 +34,24 @@ header {
     line-height: 2.4;
 }
 
-#output-grocery-list td, #output-grocery-cost td {
+#grocery-list td, #grocery-total td {
       border-bottom: 1px solid #fafafa;
 }
 
 /*classes for cells (td) within tables*/
-.grocery-name, #output-total-name {
+.grocery-name, #total-name {
     width: 40%;
     margin: 0;
     padding: 0 5%;
 }
 
-.grocery-cost, #output-total {
+.grocery-cost, #total-amount {
     width: 20%;
     margin: 0;
     padding: 0 5%;
 }
 
-.grocery-remove, #output-total-blank {
+.grocery-remove, #total-blank {
     width: 10%;
     margin: 0;
     padding: 0 5%;
