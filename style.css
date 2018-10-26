@@ -98,6 +98,11 @@ dialogue {
     }
 }
 
+/*for placeholder text in input divs*/
+.placeholder {
+    color: #9e9e9e;
+}
+
 footer {
     width: 80%;
     margin: 1em 10%;
