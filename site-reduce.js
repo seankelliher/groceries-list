@@ -62,8 +62,11 @@ market = {
             const costNumFix = costNum.toFixed(2);
             const costNumFixString = costNumFix.toString();
 
-            //Retrieve the table, insert a row and three cells into it
+            //Retrieve the table, display it...
             const groceryTable = document.getElementById("grocery-list");
+            groceryTable.style.display = "table";
+
+            //Then insert a row and three cells into it
             const groceryRow = groceryTable.insertRow(-1); //-1 inserts row at end of table
             const groceryCellName = groceryRow.insertCell(0);
             const groceryCellCost = groceryRow.insertCell(1);
@@ -108,8 +111,12 @@ market = {
             //Add two spots after decimal so total appearance is consistent: X.XX
             const sumTotalFixed = sumTotal.toFixed(2);
 
+            //Make the grocery-total table visible
+            document.getElementById("grocery-total").style.display = "table";
+
             //Insert the total in the cell
             document.getElementById("total-amount").textContent = sumTotalFixed;
+
         }
 
         //Invoke the clearTheBoxes function
