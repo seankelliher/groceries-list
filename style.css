@@ -3,7 +3,6 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 0;
-    background: #fafafa;
 }
 
 /*Clearfix for #container (accomplished with pseudo-element technique)*/
@@ -15,7 +14,7 @@
 
 header {
     width: 100%;
-    background: #00bcd4;
+    background: #e6ee9c;
     margin: 0;
     padding: 0;
     float: left;
@@ -68,7 +67,6 @@ dialogue {
     margin: 1em 5%;
     padding: 0;
     float: left;
-    background: #fafafa;
     font-family: 'Merriweather', serif;
     font-size: 1em;
     line-height: 2.4;
