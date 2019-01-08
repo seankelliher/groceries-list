@@ -14,7 +14,6 @@
 
 header {
     width: 100%;
-    background: #e6ee9c;
     margin: 0;
     padding: 0;
     float: left;
@@ -55,7 +54,7 @@ header {
 }
 
 .grocery-remove {
-    background: #ffeb3b;
+    background: #ef5350;
     text-align: center;
     cursor: pointer;
 }
