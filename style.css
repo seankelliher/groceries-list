@@ -32,7 +32,7 @@ header {
 }
 
 #grocery-list td, #grocery-total td {
-      border-bottom: 1px solid #fafafa;
+      border-bottom: 1px solid #000;
 }
 
 /*Classes for cells (td) within tables*/
