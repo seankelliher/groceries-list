@@ -75,7 +75,7 @@ dialogue {
     margin: 1em 5%;
     padding: 0.4em 5%;
     outline: none;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #000;
     float: left;
     background: #fff;
 }
