@@ -94,9 +94,9 @@ dialogue {
 }
 
 /*Makes font color grey*/
-.placeholder {
-    color: #9e9e9e;
-}
+/*.placeholder {
+    color: #000;
+}*/
 
 footer {
     width: 80%;
