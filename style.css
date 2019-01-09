@@ -30,10 +30,6 @@ header {
     display: none;
 }
 
-/*#grocery-list td, #grocery-total td {
-      border-bottom: 1px solid #000;
-}*/
-
 /*Classes for cells (td) within tables*/
 .grocery-name, #total-name {
     width: 40%;
@@ -90,11 +86,6 @@ dialogue {
         width: 30%;
     }
 }
-
-/*Makes font color grey*/
-/*.placeholder {
-    color: #000;
-}*/
 
 footer {
     width: 80%;
