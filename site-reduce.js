@@ -18,9 +18,11 @@ market = {
     readyBoxes: function () {
         "use strict";
 
+        const input = document.getElementById("input-grocery");
+
         //Monitor the table for "focus" event.
         //Clear the "name" and "price" placeholders when event occurs.
-        document.getElementById("input-grocery").addEventListener("focusin", function (element) {
+        input.addEventListener("focusin", function (element) {
             element.target.textContent = "";
         });
     },
@@ -28,8 +30,10 @@ market = {
     readyKeys: function () {
         "use strict";
 
+        const input = document.getElementById("input-grocery");
+
         //Monitor the keyboard for "keydown" event.
-        document.getElementById("input-grocery").addEventListener("keydown", function (event) {
+        input.addEventListener("keydown", function (event) {
 
             //If the "keydown" event is on the "return" key...
             //prevent default action, invoke the retrieveTheNumbers function.
@@ -110,7 +114,7 @@ market = {
         } else {
             //Convert the resulting "array like" NodeList to a "real" Array.
             //Retrieve its textContent.
-            const text = Array.from(groceryCost, (groceryCost2) => groceryCost2.textContent);
+            const text = Array.from(groceryCost, (gc) => gc.textContent);
 
             //Convert string to numbers with "map"
             const numbers = text.map(Number);
@@ -136,17 +140,16 @@ market = {
     clearTheBoxes: function () {
         "use strict";
 
-        //Gather and then clear text from input fields.
-        const clear = document.querySelectorAll("#input-grocery-name, #input-grocery-cost");
-        const clearArray = Array.from(clear);
+        //Gather the input fields.
+        const name = document.getElementById("input-grocery-name");
+        const cost = document.getElementById("input-grocery-cost");
 
-        //For Each loop.
-        clearArray.forEach(function (clr) {
-            clr.textContent = "";
-        });
+        //Clear their text content.
+        name.textContent = "";
+        cost.textContent = "";
 
         //Return cursor to the "grocery name" field.
-        document.getElementById("input-grocery-name").focus();
+        name.focus();
     },
 
     removeTheRow: function () {
