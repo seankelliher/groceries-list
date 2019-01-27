@@ -18,7 +18,7 @@ market = {
     readyBoxes: function () {
         "use strict";
 
-        //Monitor the table for "focus" event. Clear the "add grocery name" and "add grocery price" placeholder values from boxes when event occurs.
+        //Monitor the table for "focus" event. Clear the "name" and "price" placeholder values from boxes when event occurs.
         document.getElementById("input-grocery").addEventListener("focusin", function (element) {
             element.target.textContent = "";
         });
