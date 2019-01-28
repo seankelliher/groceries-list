@@ -133,20 +133,20 @@ market = {
 
         }
 
-        //Invoke the clearTheBoxes function.
-        market.clearTheBoxes();
+        //Invoke the resetTheBoxes function.
+        market.resetTheBoxes();
     },
 
-    clearTheBoxes: function () {
+    resetTheBoxes: function () {
         "use strict";
 
         //Gather the input fields.
         const name = document.getElementById("input-grocery-name");
         const cost = document.getElementById("input-grocery-cost");
 
-        //Clear their text content.
+        //Clear "grocery name" field. Add placeholder to "grocery price" field.
         name.textContent = "";
-        cost.textContent = "";
+        cost.textContent = "price";
 
         //Return cursor to the "grocery name" field.
         name.focus();
