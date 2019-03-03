@@ -22,8 +22,8 @@ market = {
 
         //Monitor the table for "focus" event.
         //Clear the "name" and "price" placeholders when event occurs.
-        input.addEventListener("focusin", function (element) {
-            element.target.textContent = "";
+        input.addEventListener("focusin", function (event) {
+            event.target.textContent = "";
         });
     },
 
@@ -159,10 +159,10 @@ market = {
         const list = document.getElementById("grocery-list");
 
         //Monitor the table for a "click" event.
-        list.addEventListener("click", function (element) {
+        list.addEventListener("click", function (event) {
 
-            const listRow = element.target.parentNode.rowIndex;
-            const listCell = element.target.cellIndex;
+            const listRow = event.target.parentNode.rowIndex;
+            const listCell = event.target.cellIndex;
 
             //If the "click" event occurs on the "third" cell, delete the row.
             //Remember, the first cell is 0.
