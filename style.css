@@ -98,9 +98,30 @@ footer {
 /*The fonts*/
 h1 {
     font-family: 'Francois One', sans-serif;
-    font-size: 1.6em;
+    /*font-size: 1.6em;*/
     line-height: 1.5;
     text-align: center;
+}
+
+@media all and (min-width: 300px) {
+
+    h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 400px) {
+
+    h1 {
+        font-size: 1.4em;
+    }
+}
+
+@media all and (min-width: 600px) {
+
+    h1 {
+        font-size: 1.6em;
+    }
 }
 
 p {
