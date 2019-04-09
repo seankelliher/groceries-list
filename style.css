@@ -126,6 +126,27 @@ h1 {
 
 p {
     font-family: 'Merriweather', serif;
-    font-size: 1em;
+    /*font-size: 1em;*/
     line-height: 2.4;
+}
+
+@media all and (min-width: 300px) {
+
+    p {
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 400px) {
+
+    p {
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    
+    p {
+        font-size: 1em;
+    }
 }
