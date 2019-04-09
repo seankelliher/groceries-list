@@ -25,9 +25,30 @@ header {
     margin: 0 auto;
     padding: 1em 5%;
     font-family: 'Merriweather', serif;
-    font-size: 1em;
+    /*font-size: 1em;*/
     line-height: 2.4;
     display: none;
+}
+
+@media all and (min-width: 300px) {
+
+    #grocery-list, #grocery-total  {
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 400px) {
+
+    #grocery-list, #grocery-total  {
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    
+    #grocery-list, #grocery-total  {
+        font-size: 1em;
+    }
 }
 
 /*Classes for cells (td) within tables*/
