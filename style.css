@@ -62,8 +62,29 @@ dialogue {
     padding: 0;
     float: left;
     font-family: 'Merriweather', serif;
-    font-size: 1em;
+    /*font-size: 1em;*/
     line-height: 2.4;
+}
+
+@media all and (min-width: 300px) {
+
+    dialogue {
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 400px) {
+
+    dialogue {
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    
+    dialogue {
+        font-size: 1em;
+    }
 }
 
 #input-grocery-name, #input-grocery-cost  {
