@@ -88,7 +88,7 @@ market = {
             groceryCellCost.textContent = costNumFixString;
 
             //Add an "x" to the third cell. This is the "delete row" "x".
-            groceryCellRemove.textContent = "x";
+            groceryCellRemove.textContent = String.fromCharCode(215);
 
             //Add class names to the three cells.
             groceryCellName.className = "grocery-name";
