@@ -89,6 +89,13 @@ section {
     line-height: 2.4;
 }
 
+/*Clearfix for section*/
+section::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 @media all and (min-width: 300px) {
 
     section {
