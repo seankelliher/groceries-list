@@ -3,6 +3,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 0;
+    background: #fafafa; /*grey 50*/
 }
 
 /*Clearfix for #container (accomplished with pseudo-element technique)*/
@@ -86,7 +87,6 @@ dialogue {
     float: left;
     font-family: 'Merriweather', serif;
     line-height: 2.4;
-    background: #fafafa; /*grey 50*/
 }
 
 @media all and (min-width: 300px) {
@@ -116,7 +116,7 @@ dialogue {
     outline: none;
     border-bottom: 1px solid #000;
     float: left;
-    background: #fff;
+    /*background: #fff;*/
 }
 
 @media all and (min-width: 300px) {
