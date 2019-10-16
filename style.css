@@ -80,7 +80,7 @@ header {
 }
 
 /*Users enter grocery name and price here*/
-dialogue {
+form {
     width: 90%;
     margin: 1em 5%;
     padding: 0;
@@ -91,21 +91,21 @@ dialogue {
 
 @media all and (min-width: 300px) {
 
-    dialogue {
+    form {
         font-size: .825em;
     }
 }
 
 @media all and (min-width: 400px) {
 
-    dialogue {
+    form {
         font-size: .875em;
     }
 }
 
 @media all and (min-width: 600px) {
     
-    dialogue {
+    form {
         font-size: 1em;
     }
 }
