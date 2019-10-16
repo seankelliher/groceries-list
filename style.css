@@ -80,7 +80,7 @@ header {
 }
 
 /*Users enter grocery name and price here*/
-form {
+section {
     width: 90%;
     margin: 1em 5%;
     padding: 0;
@@ -91,21 +91,21 @@ form {
 
 @media all and (min-width: 300px) {
 
-    form {
+    section {
         font-size: .825em;
     }
 }
 
 @media all and (min-width: 400px) {
 
-    form {
+    section {
         font-size: .875em;
     }
 }
 
 @media all and (min-width: 600px) {
     
-    form {
+    section {
         font-size: 1em;
     }
 }
