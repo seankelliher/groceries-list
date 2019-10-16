@@ -53,7 +53,7 @@ market = {
 
         //Run regex on the "grocery price" to check it's all numbers...
         //and has no more than two digits after the decimal point.
-        const costReCheck = /^\d*\.\d{1,2}$/.test(cost);
+        const costReCheck = /^\d*\.?\d{1,2}$/.test(cost);
 
         //If "grocery name" is blank, return alert.
         //If "grocery price" doesn't match pattern, return alert.
