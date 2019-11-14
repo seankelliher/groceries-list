@@ -95,11 +95,19 @@ market = {
             groceryCellCost.className = "grocery-cost";
             groceryCellRemove.className = "grocery-remove";
 
-            //Invoke the runTheNumbers function.
+            //Invoke the hideStart and runTheNumbers functions.
+            market.hideStart();
             market.runTheNumbers();
         }
     },
 
+    hideStart: function () {
+        "use strict";
+
+        const start = document.getElementById("lets-start");
+        start.style.display = "none";
+    },
+    
     runTheNumbers: function () {
         "use strict";
 
