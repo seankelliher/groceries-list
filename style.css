@@ -111,23 +111,36 @@ section {
     }
 }
 
-#input-grocery-name, #input-grocery-cost  {
-    margin: 1em 5%;
-    padding: 0.4em 5%;
+/*Divs where users enter names and prices.*/
+#input-grocery-name, #input-grocery-cost {
+    padding-left: 2.5%;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    line-height: 2.4;
     outline: none;
-    border-bottom: 1px solid #000;
+    background: #eceff1; /*blue grey 50*/
     float: left;
 }
 
+/*Media queries for the divs.*/
 @media all and (min-width: 300px) {
-    #input-grocery-name, #input-grocery-cost  {
+    #input-grocery-name {
+        width: 80%;
+    }
+
+    #input-grocery-cost {
         width: 80%;
     }
 }
 
-@media all and (min-width: 600px) {
-    #input-grocery-name, #input-grocery-cost  {
-        width: 30%;
+@media all and (min-width: 400px) {
+    #input-grocery-name {
+        width: 55%;
+        margin-right: 5%;
+    }
+
+    #input-grocery-cost {
+        width: 35%;
     }
 }
 
