@@ -141,7 +141,6 @@ market = {
 
             //Insert the word "total" into the cell.
             document.getElementById("total-name").textContent = "total";
-
         }
 
         //Invoke the resetTheBoxes function.
