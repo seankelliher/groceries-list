@@ -152,21 +152,18 @@ h1 {
 }
 
 @media all and (min-width: 300px) {
-
     h1 {
         font-size: 1.2em;
     }
 }
 
 @media all and (min-width: 400px) {
-
     h1 {
         font-size: 1.4em;
     }
 }
 
 @media all and (min-width: 600px) {
-
     h1 {
         font-size: 1.6em;
     }
@@ -180,21 +177,18 @@ h2 {
 }
 
 @media all and (min-width: 300px) {
-
     h2 {
         font-size: 1em;
     }
 }
 
 @media all and (min-width: 400px) {
-
     h2 {
         font-size: 1.2em;
     }
 }
 
 @media all and (min-width: 600px) {
-
     h2 {
         font-size: 1.4em;
     }
@@ -208,21 +202,18 @@ p {
 }
 
 @media all and (min-width: 300px) {
-
     p {
         font-size: .825em;
     }
 }
 
 @media all and (min-width: 400px) {
-
     p {
         font-size: .875em;
     }
 }
 
 @media all and (min-width: 600px) {
-    
     p {
         font-size: 1em;
     }
