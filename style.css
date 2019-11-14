@@ -25,32 +25,32 @@ nav {
     flex: initial; /*flex: 0 1 auto*/
 }
 
-/*After submission, grocery name, price, and total go here*/
+/*After submitting, name, price, and total go in these tables.*/
 #grocery-list, #grocery-total  {
-    width: 90%;
-    margin: 0 auto;
-    padding: 1em 5%;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0;
     font-family: 'Merriweather', serif;
     line-height: 2.4;
+    font-weight: 400;
     display: none;
+    flex: initial; /*flex: 0 1 auto*/
 }
 
+/*Media queries for fonts within tables.*/
 @media all and (min-width: 300px) {
-
     #grocery-list, #grocery-total  {
         font-size: .825em;
     }
 }
 
 @media all and (min-width: 400px) {
-
     #grocery-list, #grocery-total  {
         font-size: .875em;
     }
 }
 
 @media all and (min-width: 600px) {
-    
     #grocery-list, #grocery-total  {
         font-size: 1em;
     }
