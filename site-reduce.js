@@ -107,7 +107,7 @@ market = {
         const start = document.getElementById("lets-start");
         start.style.display = "none";
     },
-    
+
     runTheNumbers: function () {
         "use strict";
 
@@ -138,6 +138,9 @@ market = {
 
             //Insert the total in the cell.
             document.getElementById("total-amount").textContent = sumTotalFixed;
+
+            //Insert the word "total" into the cell.
+            document.getElementById("total-name").textContent = "total";
 
         }
 
