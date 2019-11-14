@@ -82,32 +82,30 @@ nav {
     cursor: pointer;
 }
 
-/*Users enter grocery name and price here*/
+/*Section contains divs where users enter names and prices.*/
 section {
     width: 90%;
-    margin: 1em 5%;
-    padding: 0;
-    float: left;
-    font-family: 'Merriweather', serif;
-    line-height: 2.4;
+    margin: 1em 0;
+    padding: 1em 5%;
+    background: #cfd8dc; /*blue grey 100*/
+    flex: initial; /*flex: 0 1 auto*/
+    display: flow-root;
 }
 
+/*Media queries for fonts within section.*/
 @media all and (min-width: 300px) {
-
     section {
         font-size: .825em;
     }
 }
 
 @media all and (min-width: 400px) {
-
     section {
         font-size: .875em;
     }
 }
 
 @media all and (min-width: 600px) {
-    
     section {
         font-size: 1em;
     }
