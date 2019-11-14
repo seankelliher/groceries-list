@@ -56,23 +56,23 @@ nav {
     }
 }
 
-/*Classes for cells (td) within tables*/
+/*Classes for cells (td) within tables.*/
 .grocery-name, #total-name {
-    width: 40%;
+    width: 55%;
     margin: 0;
-    padding: 0 5%;
+    padding: 0 0 0 5%;
 }
 
 .grocery-cost, #total-amount {
     width: 20%;
     margin: 0;
-    padding: 0 5%;
+    padding: 0;
 }
 
 .grocery-remove, #total-blank {
-    width: 10%;
+    width: 20%;
     margin: 0;
-    padding: 0 5%;
+    padding: 0;
 }
 
 .grocery-remove {
