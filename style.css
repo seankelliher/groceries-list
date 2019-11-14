@@ -172,6 +172,34 @@ h1 {
     }
 }
 
+/*H2 tag and its media queries.*/
+h2 {
+    font-family: 'Francois One', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+@media all and (min-width: 300px) {
+
+    h2 {
+        font-size: 1em;
+    }
+}
+
+@media all and (min-width: 400px) {
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 600px) {
+
+    h2 {
+        font-size: 1.4em;
+    }
+}
+
 p {
     font-family: 'Merriweather', serif;
     color: #006db3; /*light blue 600 dark*/
