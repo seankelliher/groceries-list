@@ -144,11 +144,11 @@ section {
     }
 }
 
-/*The Fonts*/
+/*H1 tag and its media queries.*/
 h1 {
     font-family: 'Francois One', sans-serif;
     line-height: 1.5;
-    text-align: center;
+    font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
