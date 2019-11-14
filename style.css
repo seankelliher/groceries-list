@@ -200,10 +200,11 @@ h2 {
     }
 }
 
+/*P tag and its media queries.*/
 p {
     font-family: 'Merriweather', serif;
-    color: #006db3; /*light blue 600 dark*/
-    line-height: 2.4;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
