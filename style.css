@@ -115,8 +115,8 @@ section {
 #input-grocery-name, #input-grocery-cost {
     padding-left: 2.5%;
     font-family: 'Merriweather', serif;
-    font-weight: 400;
     line-height: 2.4;
+    font-weight: 400;
     outline: none;
     background: #eceff1; /*blue grey 50*/
     float: left;
