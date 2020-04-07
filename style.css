@@ -229,7 +229,6 @@ dialogue {
     margin: 0;
     padding: 0 2.5%;
     flex: initial; /*flex: 0 1 auto.*/
-    color: #0069C0; /*blue 500 dark.*/
     background: #FFF;
     border: 1px solid #EEE; /*grey 200.*/
 }
