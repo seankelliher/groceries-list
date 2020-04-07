@@ -142,6 +142,68 @@ td {
     padding: 0;
 }
 
+.grocery-name {
+    margin: 0;
+    padding: 0;
+}
+
+.grocery-price {
+    margin: 0;
+    padding: 0;
+    text-align: right; /*aligns prices if left of decimal is 1-3 digits.*/
+}
+
+@media all and (min-width: 300px) {
+    .grocery-name {
+        width: 65%;
+    }
+
+    .grocery-price {
+        width: 20%;
+        padding-right: 5%;
+    }
+}
+
+@media all and (min-width: 400px) {
+    .grocery-name {
+        width: 60%;
+    }
+
+    .grocery-price {
+        width: 24%;
+        padding-right: 6%;
+    }
+}
+
+@media all and (min-width: 500px) {
+    .grocery-name {
+        width: 55%;
+    }
+
+    .grocery-price {
+        width: 28%;
+        padding-right: 7%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .grocery-name {
+        width: 50%;
+    }
+
+    .grocery-price {
+        width: 32%;
+        padding-right: 8%;
+    }
+}
+
+.grocery-remove {
+    width: 10%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
 /*H1 tag and its media queries.*/
 h1 {
     font-family: 'Francois One', sans-serif;
