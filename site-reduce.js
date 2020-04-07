@@ -42,60 +42,61 @@ market = {
         });
     },
 
-    checkInsertContent: function () {
+    checkEntered: function () {
         "use strict";
 
-        //Retrieve the "grocery name" and grocery price" user entered.
-        const name = document.getElementById("input-grocery-name").textContent;
-        const cost = document.getElementById("input-grocery-cost").textContent;
+        //Retrieve the name and price user entered.
+        const name = document.getElementById("input-name").textContent;
+        const price = document.getElementById("input-price").textContent;
 
-        //Run regex on the "grocery price" to check it's all numbers...
-        //and has no more than two digits after the decimal point.
-        const costReCheck = /^\d*\.?\d{1,2}$/.test(cost);
+        //Check price - all numbers + no more than 2 digits after decimal.
+        const priceCheck = /^\d*\.?\d{1,2}$/.test(price);
 
-        //If "grocery name" is blank, return alert.
-        //If "grocery price" doesn't match pattern, return alert.
+        //If name is blank, return alert.
+        //If price doesn't match pattern, return alert.
         //If both are fine, return the name and price.
-        if (costReCheck === false) {
+        if (priceCheck === false) {
             window.alert("Hey, that's not a price!");
         } else if (name === "") {
             window.alert("Hey, you need a name for that grocery!");
         } else {
 
-            //Convert "grocery price" to a number.
+            //Convert price to a number.
             //Make format .XX in case use enters "X no decimal" or "X.X".
             //Convert number back to string to insert in cell.
             //Note: There may be a better, more elegant regex way to do this.
-            const costNum = Number(cost);
-            const costNumFix = costNum.toFixed(2);
-            const costNumFixString = costNumFix.toString();
+            const priceNum = Number(price);
+            const priceNumFix = priceNum.toFixed(2);
+            const priceNumFixString = priceNumFix.toString();
 
-            //Retrieve the table, display it...
-            const groceryTable = document.getElementById("grocery-list");
-            groceryTable.style.display = "table";
+            //Retrieve the table.
+            const table = document.querySelector("table");
 
             //Then insert a row and three cells into it.
             //-1 inserts row at end of table.
-            const groceryRow = groceryTable.insertRow(-1);
-            const groceryCellName = groceryRow.insertCell(0);
-            const groceryCellCost = groceryRow.insertCell(1);
-            const groceryCellRemove = groceryRow.insertCell(2);
+            const row = table.insertRow(-1);
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            const cell3 = row.insertCell(2);
 
-            //Assign the "grocery name" and "grocery price" to their cells.
-            groceryCellName.textContent = name;
-            groceryCellCost.textContent = costNumFixString;
-
-            //Add an "x" to the third cell. This is the "delete row" "x".
-            groceryCellRemove.textContent = String.fromCharCode(215);
+            //Assign the name and price to their cells.
+            cell1.textContent = name;
+            cell2.textContent = priceNumFixString;
 
             //Add class names to the three cells.
-            groceryCellName.className = "grocery-name";
-            groceryCellCost.className = "grocery-cost";
-            groceryCellRemove.className = "grocery-remove";
+            cell1.className = "grocery-name";
+            cell2.className = "grocery-price";
+            cell3.className = "grocery-remove";
 
-            //Invoke the hideStart and runTheNumbers functions.
-            market.hideStart();
-            market.runTheNumbers();
+            //Create img element. Set its source. Add it to table row.
+            const image = document.createElement("img");
+            image.src = "svg/baseline-close-24px.svg";
+            cell3.appendChild(image);
+
+            //Check if "instructions" note should be shown or hide.
+            //It's hid after first grocery is entered.
+            //It's returned again if user deletes all items on list.
+            market.decideNote();
         }
     },
 
