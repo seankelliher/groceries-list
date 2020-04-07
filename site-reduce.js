@@ -156,7 +156,7 @@ market = {
         //Invoke function to clear entered name and price from input fields.
         market.resetInputs();
     },
-    
+
     returnNote: function () {
         "use strict";
 
@@ -169,6 +169,20 @@ market = {
             note.classList.remove("hide");
             note.classList.add("show");
         }
+    },
+
+    resetInputs: function () {
+        "use strict";
+
+        //Gather the input fields.
+        const name = document.getElementById("input-name");
+        const cost = document.getElementById("input-price");
+
+        //Return cursor to name field. This clears its content.
+        name.focus();
+
+        //Return placeholder text to price field.
+        cost.textContent = "price";
     },
 
     runTheNumbers: function () {
