@@ -92,6 +92,32 @@ button {
     visibility: hidden;
 }
 
+main {
+    width: 95%;
+    margin: 0;
+    padding: 0 2.5%;
+    flex: 1; /*flex: 1 1 0.*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis.*/
+    align-items: flex-start; /*cross-axis.*/
+    overflow: auto;
+}
+
+@media all and (min-width: 300px) {
+    main {
+        background-image: url("svg/lines-less-height.svg");
+        background-repeat: no-repeat repeat; /*no repeat x-axis. repeat y-axis.*/
+    }
+}
+
+@media all and (min-width: 600px) {
+    main {
+        background-image: url("svg/lines-more-height.svg");
+        background-repeat: no-repeat repeat; /*no repeat x-axis. repeat y-axis.*/
+    }
+}
+
 /*H1 tag and its media queries.*/
 h1 {
     font-family: 'Francois One', sans-serif;
