@@ -274,77 +274,49 @@ dialogue {
     }
 }
 
-/*H1 tag and its media queries.*/
+/*Fonts*/
+p, td, span, button {
+    font-family: 'Roboto', serif;
+    /*line-height: 1.8;*/
+    line-height: 2;
+    font-weight: 400;
+}
+
 h1 {
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 700;
 }
 
-@media all and (min-width: 300px) {
-    h1 {
-        font-size: 1.2em;
-    }
-}
-
-@media all and (min-width: 400px) {
-    h1 {
-        font-size: 1.4em;
-    }
-}
-
-@media all and (min-width: 600px) {
-    h1 {
-        font-size: 1.6em;
-    }
-}
-
-/*H2 tag and its media queries.*/
 h2 {
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 @media all and (min-width: 300px) {
-    h2 {
-        font-size: 1em;
+    p, td, span, button {
+        font-size: .9375em; /*15 pixels.*/
     }
-}
 
-@media all and (min-width: 400px) {
+    h1 {
+        font-size: 1.4375em; /*23 pixels.*/
+    }
+
     h2 {
-        font-size: 1.2em;
+        font-size: 1.0625em; /*17 pixels.*/
     }
 }
 
 @media all and (min-width: 600px) {
+    p, td, span, button {
+        font-size: 1em; /*16 pixels.*/
+    }
+
+    h1 {
+        font-size: 1.5em; /*24 pixels.*/
+    }
+
     h2 {
-        font-size: 1.4em;
-    }
-}
-
-/*P tag and its media queries.*/
-p {
-    font-family: 'Merriweather', serif;
-    line-height: 1.5;
-    font-weight: 400;
-}
-
-@media all and (min-width: 300px) {
-    p {
-        font-size: .825em;
-    }
-}
-
-@media all and (min-width: 400px) {
-    p {
-        font-size: .875em;
-    }
-}
-
-@media all and (min-width: 600px) {
-    p {
-        font-size: 1em;
-    }
+        font-size: 1.125em; /*18 pixels.*/
 }
