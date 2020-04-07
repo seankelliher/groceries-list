@@ -185,60 +185,6 @@ market = {
         cost.textContent = "price";
     },
 
-    runTheNumbers: function () {
-        "use strict";
-
-        //Gather all the elements containing the "grocery-cost" class.
-        const groceryCost = document.getElementsByClassName("grocery-cost");
-
-        //If no "grocery-cost" class exists, reload the page.
-        //This is in case user deletes all groceries on list.
-        //Total is erased. Placeholder values on input fields are returned.
-        if (groceryCost.length <= 0) {
-            location.reload();
-        } else {
-            //Convert the resulting "array like" NodeList to a "real" Array.
-            //Retrieve its textContent.
-            const text = Array.from(groceryCost, (gc) => gc.textContent);
-
-            //Convert string to numbers with "map"
-            const numbers = text.map(Number);
-
-            //Add the numbers with "reduce"
-            const sumTotal = numbers.reduce((acc, val) => acc + val);
-
-            //Add two spots after decimal so total appearance is : X.XX.
-            const sumTotalFixed = sumTotal.toFixed(2);
-
-            //Make the grocery-total table visible.
-            document.getElementById("grocery-total").style.display = "table";
-
-            //Insert the total in the cell.
-            document.getElementById("total-amount").textContent = sumTotalFixed;
-
-            //Insert the word "total" into the cell.
-            document.getElementById("total-name").textContent = "total";
-        }
-
-        //Invoke the resetTheBoxes function.
-        market.resetTheBoxes();
-    },
-
-    resetTheBoxes: function () {
-        "use strict";
-
-        //Gather the input fields.
-        const name = document.getElementById("input-grocery-name");
-        const cost = document.getElementById("input-grocery-cost");
-
-        //Clear "grocery name" field. Add placeholder to "grocery price" field.
-        name.textContent = "";
-        cost.textContent = "price";
-
-        //Return cursor to the "grocery name" field.
-        name.focus();
-    },
-
     removeTheRow: function () {
         "use strict";
 
