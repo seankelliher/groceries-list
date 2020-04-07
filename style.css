@@ -27,6 +27,58 @@ header {
     align-items: center; /*cross-axis.*/
 }
 
+#header-text {
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex 0 1 auto.*/
+}
+
+#header-button {
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex 0 1 auto.*/
+}
+
+@media all and (min-width: 300px) {
+    #header-text {
+        width: 60%;
+    }
+
+    #header-button {
+        width: 35%;
+    }
+}
+
+@media all and (min-width: 400px) {
+    #header-text {
+        width: 55%;
+    }
+
+    #header-button {
+        width: 30%;
+    }
+}
+
+@media all and (min-width: 500px) {
+    #header-text {
+        width: 50%;
+    }
+
+    #header-button {
+        width: 25%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    #header-text {
+        width: 45%;
+    }
+
+    #header-button {
+        width: 20%;
+    }
+}
+
 nav {
     width: 90%;
     margin: 1em 0;
