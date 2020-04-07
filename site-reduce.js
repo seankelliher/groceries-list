@@ -100,6 +100,23 @@ market = {
         }
     },
 
+    decideNote: function () {
+        "use strict";
+
+        //Get note. Check if it has "show" class.
+        const note = document.getElementById("note");
+        const show = note.classList.contains("show");
+
+        //If note is shown, hide it. Invoke function to add prices.
+        if (show === true) {
+            note.classList.remove("show");
+            note.classList.add("hide");
+            market.runNumbers();
+        } else {
+            market.runNumbers();
+        }
+    },
+    
     hideStart: function () {
         "use strict";
 
