@@ -185,27 +185,29 @@ market = {
         cost.textContent = "price";
     },
 
-    removeTheRow: function () {
+    removeRow: function () {
         "use strict";
 
         //Get the table.
-        const list = document.getElementById("grocery-list");
+        const table = document.querySelector("table");
 
         //Monitor the table for a "click" event.
-        list.addEventListener("click", function (event) {
+        table.addEventListener("click", function (event) {
 
+            //Get the target's row and cell index.
             const listRow = event.target.parentNode.rowIndex;
             const listCell = event.target.cellIndex;
 
-            //If the "click" event occurs on the "third" cell, delete the row.
-            //Remember, the first cell is 0.
+            //If user clicks on "remove" cell, delete the row.
+            //Remember numbers begin at 0. Two is really the third cell.
             if (listCell === 2) {
-                list.deleteRow(listRow);
+                table.deleteRow(listRow);
 
-                //Invoke the runTheNumbers function.
-                market.runTheNumbers();
+                //Invoke the function to add prices.
+                //You're re-calculating total after items was removed.
+                market.runNumbers();
             }
         });
     }
 
-}; //close market
+}; //close market.
