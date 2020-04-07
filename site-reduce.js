@@ -1,18 +1,15 @@
-//Global "variable" (actually "let").
+//Global variable.
 let market;
 
-//Ensure the DOM is loaded.
+//Ensure the DOM is loaded. Then, invoke the functions.
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
 
-    //Invoke functions with event listeners.
     market.readyBoxes();
     market.readyKeys();
-    market.removeTheRow();
+    market.removeRow();
+});
 
-}); //close DOMContentLoaded function.
-
-//The "market" "variable" (actually "let").
 market = {
 
     readyBoxes: function () {
