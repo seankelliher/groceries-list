@@ -79,14 +79,6 @@ header {
     }
 }
 
-nav {
-    width: 90%;
-    margin: 1em 0;
-    padding: 1em 5%;
-    background: #29b6f6; /*light blue 400*/
-    flex: initial; /*flex: 0 1 auto*/
-}
-
 /*After submitting, name, price, and total go in these tables.*/
 #grocery-list, #grocery-total  {
     width: 100%;
