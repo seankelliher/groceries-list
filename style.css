@@ -79,39 +79,6 @@ header {
     }
 }
 
-/*Divs where users enter names and prices.*/
-#input-grocery-name, #input-grocery-cost {
-    padding-left: 2.5%;
-    font-family: 'Merriweather', serif;
-    line-height: 2.4;
-    font-weight: 400;
-    outline: none;
-    background: #eceff1; /*blue grey 50*/
-    float: left;
-}
-
-/*Media queries for the divs.*/
-@media all and (min-width: 300px) {
-    #input-grocery-name {
-        width: 80%;
-    }
-
-    #input-grocery-cost {
-        width: 80%;
-    }
-}
-
-@media all and (min-width: 400px) {
-    #input-grocery-name {
-        width: 55%;
-        margin-right: 5%;
-    }
-
-    #input-grocery-cost {
-        width: 35%;
-    }
-}
-
 /*H1 tag and its media queries.*/
 h1 {
     font-family: 'Francois One', sans-serif;
