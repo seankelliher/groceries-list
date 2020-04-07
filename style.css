@@ -79,61 +79,6 @@ header {
     }
 }
 
-/*Classes for cells (td) within tables.*/
-.grocery-name, #total-name {
-    width: 55%;
-    margin: 0;
-    padding: 0 0 0 5%;
-}
-
-.grocery-cost, #total-amount {
-    width: 20%;
-    margin: 0;
-    padding: 0;
-}
-
-.grocery-remove, #total-blank {
-    width: 20%;
-    margin: 0;
-    padding: 0;
-}
-
-.grocery-remove {
-    color: #fff;
-    background: #f44336; /*red 500*/
-    text-align: center;
-    cursor: pointer;
-}
-
-/*Section contains divs where users enter names and prices.*/
-section {
-    width: 90%;
-    margin: 1em 0;
-    padding: 1em 5%;
-    background: #cfd8dc; /*blue grey 100*/
-    flex: initial; /*flex: 0 1 auto*/
-    display: flow-root;
-}
-
-/*Media queries for fonts within section.*/
-@media all and (min-width: 300px) {
-    section {
-        font-size: .825em;
-    }
-}
-
-@media all and (min-width: 400px) {
-    section {
-        font-size: .875em;
-    }
-}
-
-@media all and (min-width: 600px) {
-    section {
-        font-size: 1em;
-    }
-}
-
 /*Divs where users enter names and prices.*/
 #input-grocery-name, #input-grocery-cost {
     padding-left: 2.5%;
