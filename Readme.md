@@ -2,8 +2,6 @@
 
 Interactive "grocery list" that displays the items and prices a user has entered and calculates the total cost. Safeguards ensure that all items are given a name and all entered prices are numbers only. Individual items can later be removed from the list. Upon doing so, the total cost is re-calculated.
 
-The list has minimal styling; all sizing is relative; and it relies on only several media queries.
-
 ## Authors
 
 * **Sean Kelliher** - [seankelliher](https://github.com/seankelliher)
