@@ -210,6 +210,70 @@ img {
     pointer-events: none;
 }
 
+/*Dialogue is where users enter the grocery names and prices.*/
+dialogue {
+    width: 90%;
+    margin: 1em 0;
+    padding: 1em 5%;
+    flex: initial; /*flex: 0 1 auto.*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /*main axis.*/
+    background: #F5F5F5; /*grey 100.*/
+    align-items: center; /*cross-axis.*/
+}
+
+/*Classes for divs within dialogue.*/
+#input-name, #input-price {
+    width: 40%;
+    margin: 0;
+    padding: 0 2.5%;
+    flex: initial; /*flex: 0 1 auto.*/
+    color: #0069C0; /*blue 500 dark.*/
+    background: #FFF;
+    border: 1px solid #EEE; /*grey 200.*/
+}
+
+@media all and (min-width: 300px) {
+    #input-name {
+        width: 60%;
+    }
+
+    #input-price {
+        width: 20%;
+    }
+}
+
+@media all and (min-width: 400px) {
+    #input-name {
+        width: 55%;
+    }
+
+    #input-price {
+        width: 25%;
+    }
+}
+
+@media all and (min-width: 500px) {
+    #input-name {
+        width: 50%;
+    }
+
+    #input-price {
+        width: 30%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    #input-name {
+        width: 45%;
+    }
+
+    #input-price {
+        width: 35%;
+    }
+}
+
 /*H1 tag and its media queries.*/
 h1 {
     font-family: 'Francois One', sans-serif;
