@@ -157,11 +157,18 @@ market = {
         market.resetInputs();
     },
     
-    hideStart: function () {
+    returnNote: function () {
         "use strict";
 
-        const start = document.getElementById("lets-start");
-        start.style.display = "none";
+        //Get note. Check if it has "hide" class.
+        const note = document.getElementById("note");
+        const hide = note.classList.contains("hide");
+
+        //If note is hid, show it.
+        if (hide === true) {
+            note.classList.remove("hide");
+            note.classList.add("show");
+        }
     },
 
     runTheNumbers: function () {
