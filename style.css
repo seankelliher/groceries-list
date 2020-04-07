@@ -118,6 +118,30 @@ main {
     }
 }
 
+/*Table houses the groceries users enter.*/
+table  {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: initial; /*0 1 auto.*/
+}
+
+/*Show/Hide are used to show or hide tabble's first row (where "note" is).*/
+.show {
+    display: table;
+    color: #0069C0; /*blue 500 dark.*/
+}
+
+.hide {
+    display: none;
+}
+
+/*Table's cells (td) and classes for them.*/
+td {
+    margin: 0;
+    padding: 0;
+}
+
 /*H1 tag and its media queries.*/
 h1 {
     font-family: 'Francois One', sans-serif;
