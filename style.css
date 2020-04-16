@@ -224,9 +224,9 @@ dialogue {
 
 /*Classes for divs within dialogue.*/
 #input-name, #input-price {
-    width: 40%;
+    width: 45%;
     margin: 0;
-    padding: 0 2.5%;
+    padding: 0;
     flex: initial; /*flex: 0 1 auto.*/
     background: #FFF;
     border-bottom: 2px solid #000;
@@ -234,17 +234,7 @@ dialogue {
 
 @media all and (min-width: 300px) {
     #input-name {
-        width: 60%;
-    }
-
-    #input-price {
-        width: 20%;
-    }
-}
-
-@media all and (min-width: 400px) {
-    #input-name {
-        width: 55%;
+        width: 65%;
     }
 
     #input-price {
@@ -252,9 +242,9 @@ dialogue {
     }
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 400px) {
     #input-name {
-        width: 50%;
+        width: 60%;
     }
 
     #input-price {
@@ -262,13 +252,23 @@ dialogue {
     }
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 500px) {
     #input-name {
-        width: 45%;
+        width: 55%;
     }
 
     #input-price {
         width: 35%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    #input-name {
+        width: 50%;
+    }
+
+    #input-price {
+        width: 40%;
     }
 }
 
