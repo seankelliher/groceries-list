@@ -219,7 +219,6 @@ dialogue {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; /*main axis.*/
-    background: #F5F5F5; /*grey 100.*/
     align-items: center; /*cross-axis.*/
 }
 
