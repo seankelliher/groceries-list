@@ -229,7 +229,7 @@ dialogue {
     padding: 0 2.5%;
     flex: initial; /*flex: 0 1 auto.*/
     background: #FFF;
-    border: 1px solid #EEE; /*grey 200.*/
+    border-bottom: 2px solid #000;
 }
 
 @media all and (min-width: 300px) {
