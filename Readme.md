@@ -1,27 +1,33 @@
-# Groceries List
+[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/groceries-list?style=flat-square)](/LICENSE.txt)
+## Groceries List
 
-Interactive "grocery list" that displays the items and prices a user has entered and calculates the total cost. Safeguards ensure that all items are given a name and all entered prices are numbers only. Individual items can later be removed from the list. Upon doing so, the total cost is re-calculated.
+Interactive "grocery list" that totals the cost.
 
-## Authors
+## Project Screen Shots
 
-* **Sean Kelliher** - [seankelliher](https://github.com/seankelliher)
+![screen shot of project](/screenshots/groceries-list-screenshot1.jpg)
 
-## Deployment
+![screen shot of project](/screenshots/groceries-list-screenshot2.jpg)
 
-All you need is a web browser. Code works in a local or remote environment.
+## Installation and Setup Instructions
 
-## Built With
+This is a static component. All you need is a web browser.
 
-* JavaScript
-* CSS
-* HTML
+## Reflection
 
-## License
+I wanted to build a "grocery list" component where users can add and remove items and prices to/from a list and the component automatically calculates the total cost. There were several challenges in doing this.
 
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
+I needed to build a work flow that was as easy as possible for users. The cursor would automatically advance to the next field to complete whenever possible, and the total at the top of the page and inputs at the bottom of the page always remained visible, even if the list grew taller than the screen.
+
+I also needed to ensure that users entered both a grocery name and price, and that the price was always a number. If any of these conditions were false, I needed to alert users with a unique message so they could fix the problem.
+
+Lastly, I needed to allow users to enter prices such as "2" or "2.0" and always have them display consistently as "2.0" on the list.
+
+Using Regular Expression, JavaScript methods such as focus() and toFixed(), and the CSS Flexible Box Layout Module, I was able to meet these goals.
 
 ## Acknowledgments
 
-* Readme file based on [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) by Billie Thompson.
+* Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * Design guidance from Google's [Material Design](https://material.io/design).
 * Fonts from [Google Fonts](https://fonts.google.com).
+* Shields from [Shields](https://shields.io).
