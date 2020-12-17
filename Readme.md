@@ -11,7 +11,7 @@ Interactive "grocery list" that totals the cost.
 
 ## Installation and Setup Instructions
 
-This is a static component. All you need is a web browser.
+This is a static component. All you need is a web browser. However, component uses ES6 modules. Developing locally may require disabling your browser's local file restrictions.
 
 ## Reflection
 
@@ -28,6 +28,7 @@ Using Regular Expression, JavaScript methods such as focus() and toFixed(), and 
 ## Acknowledgments
 
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
+* JavaScript guidance from [JSLint](http://jslint.com).
 * Design guidance from Google's [Material Design](https://material.io/design).
 * Fonts from [Google Fonts](https://fonts.google.com).
 * Shields from [Shields](https://shields.io).
