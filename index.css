@@ -274,20 +274,20 @@ dialogue {
 
 /*Fonts*/
 p, td, span, button {
-    font-family: 'Roboto', serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*line-height: 1.8;*/
     line-height: 2;
     font-weight: 400;
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 700;
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 700;
 }
