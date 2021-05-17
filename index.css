@@ -129,7 +129,7 @@ table  {
 /*Show/Hide are used to show or hide tabble's first row (where "note" is).*/
 .show {
     display: table;
-    color: #0069C0; /*blue 500 dark.*/
+    color: #1976D2; /*blue 700*/
 }
 
 .hide {
