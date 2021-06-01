@@ -275,7 +275,6 @@ dialogue {
 /*Fonts*/
 p, td, span, button {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /*line-height: 1.8;*/
     line-height: 2;
     font-weight: 400;
 }
@@ -286,35 +285,32 @@ h1 {
     font-weight: 700;
 }
 
-h2 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 700;
-}
-
 @media all and (min-width: 300px) {
     p, td, span, button {
-        font-size: .9375em; /*15 pixels.*/
+        font-size: .875em;
     }
 
     h1 {
-        font-size: 1.4375em; /*23 pixels.*/
+        font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 400px) {
+    p, td, span, button {
+        font-size: .9375em;
     }
 
-    h2 {
-        font-size: 1.0625em; /*17 pixels.*/
+    h1 {
+        font-size: 1.4em;
     }
 }
 
 @media all and (min-width: 600px) {
     p, td, span, button {
-        font-size: 1em; /*16 pixels.*/
+        font-size: 1em;
     }
 
     h1 {
-        font-size: 1.5em; /*24 pixels.*/
+        font-size: 1.6em;
     }
-
-    h2 {
-        font-size: 1.125em; /*18 pixels.*/
 }
